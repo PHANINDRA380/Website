@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL MART | ECOMMERCE AFFILIATE WEBSITE </title>
+    <link rel="shortcut icon" type="image/png" href="images/DIGITAL MART LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="header">
+<div class="container">
+    <div class="navbar">     
+        <div class="logo">
+        <a href="index.html"><img src="images/DIGITAL MART LOGO.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="products.html">products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Account.HTML">account</a></li>
+            </ul>
+        </nav>
+    <a href=""><img src="images/cart.png" width="30px" height="30px"></a> 
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="row-1">
+        
+<style>
+.slideshow-container {
+    max-width: 10000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <a href="https://www.ajio.com/s/50-to-90-percent-off-uhp-4814-72981"><img src="/images/AJIO sale.gif" style="width:100%"></a>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <a href="https://www.myntra.com/shop/women"><img src="/images/Myntra sale.png" style="width:100%"></a>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <a href="https://www.flipkart.com/the-big-billiondays-2023-top-deals-from-house-of-apple-bbd23ji-store?param=8765&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbImlQaG9uZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D&otracker=clp_metro_expandable_1_3.metroExpandable.METRO_EXPANDABLE_iPhone_mobile-phones-big-billion-days-2023-i8we74-store_PW51E1CVWM5S_wp3&fm=neo%2Fmerchandising&iid=M_c2c69fe7-dc85-4ef4-a391-047019da35a4_3.PW51E1CVWM5S&ppt=hp&ppn=homepage&ssid=sg9q2xtf6o0000001696784329195"><img src="/images/Flipkart sale.png" style="width:100%"></a>
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+        <!-- <div class="col-2">
+            <h1>BIG SAVINGS ON ELECTRONICS AND ACCESSORIES<br>A New Styles!</h1>
+            <p>SHOP MORE PAY LESS</p>
+            <a href="https://www.amazon.in/b?node=26297682031&pf_rd_r=E3RX73JY9MGRSN6ZMG4T&pf_rd_p=5cf26407-22fe-49b1-99c7-aabb00fa374b&pd_rd_r=9087d3e1-acb9-4f00-b27d-a0dd197eddd8&pd_rd_w=D4tW4&pd_rd_wg=yt3sN&ref_=pd_gw_unk"class="buttun">Explore now &#8594</a>
+        </div>
+        <div class="col-2">
+        <a href="https://www.amazon.in/b?node=26297682031&pf_rd_r=E3RX73JY9MGRSN6ZMG4T&pf_rd_p=5cf26407-22fe-49b1-99c7-aabb00fa374b&pd_rd_r=9087d3e1-acb9-4f00-b27d-a0dd197eddd8&pd_rd_w=D4tW4&pd_rd_wg=yt3sN&ref_=pd_gw_unk">  <img src="images/amazon offer.png" ></a> 
+        </div> -->
+    </div>
+    </div>
+</div>
+<!--featured categories--> 
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+            <a href="https://www.ajio.com/ray-j-casual-shoes-with-typography-detail/p/461996942_orange"><img src="images/RAY J.webp"></a>
+            </div>
+            <div class="col-3">
+            <a href="https://www.myntra.com/casual-shoes/adidas-originals/adidas-originals-men-white-solid-superstar-vegan-sneakers/12031878/buy"><img src="images/addidas superstar.jpg"></a>
+            </div>
+                <div class="col-3">
+                <a href="https://amzn.to/3lNG057">   <img src="images/swetshirt.png"></a>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="header-2">
+    <div class="container-2">
+<div class="row">
+    <div class="col-7">
+    <a href="https://www.flipkart.com/laptops/apple~brand/pr?sid=6bo,b5g" > <img src="images/macbook pro.jpg" ></a> 
+    </div>
+</div>
+</div>
+</div>
+<!--featured products -->
+<div class="small-container">
+    <h2 class="tittle"> Featured products</h2>
+    <div class="row">
+        <div class="col-4">
+        <a href="https://amzn.to/3B1jSsS"><img src="images/iqoo z3.png"></a> 
+            <h4>IQOO Z3 Moblie</h4>
+            <div class="rating">
+            </div>
+            <p>RS17999.00</p>
+        </div>
+        <div class="col-4">
+<a href="https://amzn.to/3B1Xek9"><img src="images/Dell lap.png"></a> 
+            <h4>DELL LAPTOP</h4>
+            <div class="rating">
+            </div>
+            <p>RS51990.00</p>
+        </div>
+        <div class="col-4">
+            <a href="https://amzn.to/2XIr922" ><img src="images/laptop bag.png"></a>
+            <h4>Laptop Bag</h4>
+            <div class="rating">
+            </div>
+            <p>RS598.00</p>
+        </div>
+        <div class="col-4">
+        <a href="https://amzn.to/3otlyIf"><img src="images/sparx slippers.png"></a> 
+            <h4>Sparx slippers</h4>
+            <div class="rating">
+            </div>
+            <p>RS750.00</p>
+        </div>
+    </div>
+    <h2 class="tittle">Latest products</h2>
+    <div class="row">
+        <div class="col-4">
+        <a href="https://amzn.to/3yCYCZ8"><img src="images/noise watch.png"></a>
+            <h4>Noise Watch</h4>
+            <div class="rating">
+            </div>
+            <p>RS3,999.00</p>
+        </div>
+        <div class="col-4">
+            <a href="https://amzn.to/3fNlJsW"> <img src="images/product-6.jpg"></a>
+            <h4>Black Puma T-shirt</h4>
+            <div class="rating">
+            </div>
+            <p>RS1,274.00</p>
+        </div>
+        <div class="col-4">
+        <a href="https://amzn.to/3shsqIJ" ><img src="images/redmi 9a.png"></a>
+            <h4>Redmi9A moblie</h4>
+            <div class="rating">
+            </div>
+            <p>RS6999.00</p>
+        </div>
+        <div class="col-4">
+        <a href="https://amzn.to/3s3zFDT"> <img src="images/product-8.jpg"></a>
+            <h4>Fossil Watch</h4>
+            <div class="rating">
+            </div>
+            <p>RS9,995.00</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+        <a href="https://amzn.to/2VHiFHi"> <img src="images/sonata.png"></a>
+            <h4>Roadstar Watch</h4>
+            <div class="rating">
+            </div>
+            <p>RS1,625.00</p>
+        </div>
+        <div class="col-4">
+    <a href="https://amzn.to/3AprHrJ"><img src="images/white spaxs.png"></a> 
+            <h4>Sparxs Shoe</h4>
+            <div class="rating">
+            </div>
+            <p>RS1,159.00</p>
+        </div>
+        <div class="col-4">
+        <a href="https://amzn.to/3lOOycc"> <img src="images/nord 2.png"></a> 
+            <h4>Shoe</h4>
+            <div class="rating">
+            </div>
+            <p>RS34,999.00</p>
+        </div>
+        <div class="col-4">
+            <a href="https://amzn.to/3lOOGZe" ><img src="images/dell laptop.png"></a>
+            <h4>Black Track Pant</h4>
+            <div class="rating">
+            </div>
+            <p>RS59,890.00</p>
+        </div>
+    </div>
+</div>
+<!--offer-->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+<p>Exclusively Avaliable on Redstore</p>
+<h1>smart Band 4</h1>
+<small>The Mi Smart Band 4 features a 39.9% larger 
+    (than Mi Bnad 3) AMOLED color full-touch dispaly width
+    adjustable brightness, so everything is clear as can 
+    be.</small>
+    <br>
+    <a href="https://www.amazon.in/Mi-Smart-Band-Waterproof-up/dp/B08BL5BN9F/ref=sr_1_1?dchild=1&hvadid=72499145177588&hvbmt=be&hvdev=c&hvqmt=e&keywords=mi%2B4%2Bband&qid=1624268750&sr=8-1&th=1" class="buttun"> Buy Now &#8594</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--testimonial-->
+<div class="testimonoal">
+<div class="samll-container">
+    <h1 style="text-align: center;">FEEDBACK</h1>
+    <div class="row">
+        <div class="col-3">
+            <p>Very good site which reduces the time on searching products and displaying the best deals
+            </p>
+            <img src="images/user-1.png">
+            <h3>Sean park</h3>
+        </div>
+        <div class="col-3">
+            <p>I am very happy to use the these site its makes my shopping simple
+            </p>
+            <img src="images/user-2.png">
+            <h3>Mike Smith</h3>
+        </div>
+        <div class="col-3">
+            <p>From these site i have saved lot money
+            </p>
+            <img src="images/user-3.png">
+            <h3>Mabel Joe</h3>
+        </div>
+    </div>
+</div>
+</div>
+<!-- brands-->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+<a href="https://amzn.to/3A61vlo"><img src="images/Amazon_logo.svg"></a>
+            </div>
+            <div class="col-5">
+            <a href="https://www.flipkart.com/?s_kwcid=AL!739!3!339091972992!e!!g!!flipkart&&semcmpid=sem_8024046704_brand_city_goog&gclid=CjwKCAjwpMOIBhBAEiwAy5M6YD93WtQchEPhRJ2RgtmRbBRIxa4VOVTLIzGNfZJ2mWIqtHwYcM8jShoCUUAQAvD_BwE&gclsrc=aw.ds" >
+                <img src="images/Flipkart-Logo-2.jpg"></a>
+            </div>
+            <div class="col-5">
+            <a href="https://www.myntra.com/?utm_source=perf_google_search_brand&utm_medium=perf_google_search_brand&utm_campaign=Search%20-%20Myntra%20Brand%20(India)&gclid=CjwKCAjwpMOIBhBAEiwAy5M6YJMQjq7LrO2zil6i2qb_NiIK9z9Y0e2EqhZ8PcWzr0Kb1UuNKHXePRoCqb8QAvD_BwE" >
+                <img src="images/myntra_logo.webp"></a>
+            </div>
+            <div class="col-5">
+            <a href="https://www.ajio.com/?gclid=CjwKCAjwpMOIBhBAEiwAy5M6YCcq7MNd5en8R766WJ9kau6e3QN8kSiDCLnRUYmtyYLsFNFFJzGMWxoCNDcQAvD_BwE"  ><img src="images/AJIO_LOGO.jpg"></a>
+            </div>
+            <div class="col-5">
+            <a href="https://cashkaro.com?r=10942593&fname=Karlapudi+phanindra" > <img src="images/cashkaro.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios moblie phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+            <a href=""  ><img src="images/DIGITAL MART LOGO.png"></a>
+                <p>Our Purpose Is Customers To Buy The Products Very easily
+                And get best deals on products.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <a href="" >  <li>coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li><a href="https://affiliate-program.amazon.in/"></a>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <a href="" ><li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+            <p class="copyright">Copyright 2021 - DIGITAL MART</p>
+    </div>
+</div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    </script>
+</body>
+</html>
